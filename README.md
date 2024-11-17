@@ -1,4 +1,4 @@
-# capzemini
+# capgemini
 
 SharePoint Site URL-
 https://sczgh.sharepoint.com/sites/Camgemini/Lists/Training%20Data/AllItems.aspx
