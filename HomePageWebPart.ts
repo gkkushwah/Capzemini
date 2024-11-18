@@ -23,8 +23,8 @@ export default class HpWebPart extends BaseClientSideWebPart<IHpWebPartProps> {
         <h1>Welcome to the Training Portal</h1>
         <p>This site provides training reports and admin management tools.</p>
         <nav style="margin-top: 20px;">
-          <a href="${this.context.pageContext.web}" style="margin-right: 15px;">Reports</a>
-          <a href="/sites/training/AdminPage">Admin</a>
+          <a href="${this.context.pageContext.web}" style="margin-right: 15px;"></a>
+          <a href="/sites/training/AdminPage"></a>
         </nav>
 
 
@@ -98,6 +98,10 @@ export default class HpWebPart extends BaseClientSideWebPart<IHpWebPartProps> {
     return `
       <section class="${styles.about}">
         <div class="${styles.container}">
+         <div class="${styles['about-image']}">
+            <img src="${this.context.pageContext.web.absoluteUrl}/SiteAssets/Group 16128.png" alt="Online Learning Image">
+          </div>
+          
           <div class="${styles['about-content']}">
             <h2>Discover Our Online Learning Programs</h2>
             <p>Dive into an array of meticulously crafted courses.</p>
@@ -108,9 +112,7 @@ export default class HpWebPart extends BaseClientSideWebPart<IHpWebPartProps> {
             </ul>
             <button>Discover More</button>
           </div>
-          <div class="${styles['about-image']}">
-            <img src="${this.context.pageContext.web.absoluteUrl}/SiteAssets/Group 16128.png" alt="Online Learning Image">
-          </div>
+         
         </div>
       </section>
     `;
@@ -147,10 +149,11 @@ export default class HpWebPart extends BaseClientSideWebPart<IHpWebPartProps> {
     return `
       <section class="${styles.courses}">
         <div class="${styles.container}">
-          <h2>Find Your Path with Our Online Courses</h2>
-          <p>Embark on a personalized journey of growth and discovery with our expert-guided courses.</p>
+          
           <div class="${styles['courses-container']}">
             <div class="${styles['courses-text']}">
+            <h2>Find Your Path with Our Online Courses</h2>
+          <p>Embark on a personalized journey of growth and discovery with our expert-guided courses.</p>
               <ul>
                 <li>Personalized Learning Paths</li>
                 <li>Interactive Course Materials</li>
@@ -159,6 +162,7 @@ export default class HpWebPart extends BaseClientSideWebPart<IHpWebPartProps> {
               <button>Discover More</button>
             </div>
             <div class="${styles['courses-image']}">
+            
               <img src="${this.context.pageContext.web.absoluteUrl}/SiteAssets/Group16129.png" alt="Courses Overview Image">
             </div>
           </div>
