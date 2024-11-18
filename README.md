@@ -59,3 +59,20 @@ Report Page Local Workbench Url-
 https://sczgh.sharepoint.com/sites/Camgemini/_layouts/15/workbench.aspx
 
 I faced challenges to link report page and still data not fatch in same tab and also face challenges in blog container to design all images horizontaly (use display flex but still not set).Some CSS error
+
+Embedding Power Apps
+Challenges:
+Power Apps may not render correctly in the SharePoint Power Apps web part.
+Troubleshooting embedded app permissions or App ID issues.
+Solution:
+Ensure the App ID is correct and properly configured in the Power Apps web part.
+Check if the current user has access to the Power App.
+
+Deploying to the App Catalog
+Challenges:
+App Catalog may not exist or may not be accessible.
+Uploading the .sppkg file might fail due to invalid configurations or permissions.
+Solution:
+Confirm the App Catalog is enabled:
+Tenant-wide: Admin must create it via the SharePoint Admin Center.
+Site-specific: Use PowerShell to enable the App Catalog for site collections.
