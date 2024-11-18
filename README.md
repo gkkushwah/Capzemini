@@ -48,7 +48,8 @@ Troubleshooting
 Web Part Not Appearing: Ensure the solution is deployed and added to the site.
 Power App Not Displaying: Verify the Power App ID and user permissions
 
-
+Deploy WebPart Link-
+https://sczgh.sharepoint.com/:u:/r/sites/Camgemini/SitePages/WebPart.aspx?csf=1&web=1&share=ET4d58oroqhIgg3F7VPBKUgBWJEbh7eylLS65FJXOdCvtQ&e=a8cBRE
 SharePoint Site URL-
 https://sczgh.sharepoint.com/sites/Camgemini/Lists/Training%20Data/AllItems.aspx
 
