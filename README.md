@@ -77,3 +77,34 @@ Solution:
 Confirm the App Catalog is enabled:
 Tenant-wide: Admin must create it via the SharePoint Admin Center.
 Site-specific: Use PowerShell to enable the App Catalog for site collections.
+
+
+
+
+POWER APP
+
+I take container for delete  confirmation pop message (Set the Visible property of the container)
+Code - ShowConfirm
+ 
+set the OnSelect property of the Delete button to:
+Set(ShowConfirm,true);Set(SelectedID,ThisItem.ID);
+
+
+
+In this conatinmer I take a text lable of msg (“Are You sure to delete this record”)
+And 
+take 2 button (yes, no)
+
+
+Set On yes button of  OnSelect property:
+Remove('Training Data', LookUp('Training Data',ID=SelectedID));
+Set(ShowConfirm, false);
+Notify("Item deleted successfully!", NotificationType.Success);
+
+
+Set on No button of OnSelect property:
+Set(ShowConfirm,false)
+
+
+
+
